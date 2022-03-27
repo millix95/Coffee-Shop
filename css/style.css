@@ -1,0 +1,141 @@
+body {
+	font-family: 'Oswald', sans-serif;
+}
+/* ***** HEADER ***** */
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+#header-logo {
+	height: 24px;
+}
+header a {
+	color: white;
+	margin-left: 24px;
+}
+header a:hover {
+	color: white;
+}
+header a:visited {
+	color: white;
+}
+.text-right {
+	text-align-last: right;
+}
+.ikonica {
+	text-align-last: right;
+}
+.menu-icon {
+	width: 32px;
+}
+/* ***** HERO SECTIJA ***** */
+#hero-section {
+	background-image: linear-gradient(
+			to bottom right,
+			rgba(0, 0, 0, 0.8),
+			rgba(23, 23, 23, 0)
+		),
+		url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sadrzaj {
+	z-index: 2;
+}
+#hero-logo {
+	width: 256px;
+}
+.font-weight-bold {
+	font-weight: bold;
+}
+#arrow-down {
+	position: absolute;
+	bottom: 64px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	display: block;
+	width: 64px;
+	z-index: 1;
+}
+/* ***** UVODNA SECTIJA ***** */
+#intro-section {
+	background-color: #eae7de;
+}
+/* ***** O NAMA SECTIJA ***** */
+#abouth-bg-1 {
+	background-image: url(../img/great-place.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	min-height: 480px;
+}
+#abouth-bg-2 {
+	background-image: linear-gradient(to right, #36313782, #36313782),
+		url(../img/fresh-beans.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	min-height: 640px;
+}
+/* ***** MENU SECTIJA ***** */
+#menu-section {
+	background-color: #eae7de;
+}
+/* ***** KONTAKT SECTIJA ***** */
+#contact-info-section {
+	width: 100%;
+}
+#contact-info-bg-1 {
+	background-image: linear-gradient(to right, #36313782, #36313782),
+		url(../img/contact-img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+	margin: 0;
+}
+#contact-info-bg-2 {
+	background-color: #3d24249a;
+}
+/* ***** MAPA SECTIJA ***** */
+
+/* ***** FOOTER SECTIJA ***** */
+footer {
+	background-color: #312423;
+}
+footer a img {
+	width: 32px;
+	margin: 10px;
+}
+@media (max-width: 768px) {
+	¤ footer {
+		text-align: center;
+	}
+	.text-right {
+		text-align-last: center;
+		margin-bottom: 10px;
+	}
+}
+/* ***** MOBILE MENU SECTIJA ***** */
+#mobile-menu {
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #312423ed;
+	display: none;
+}
+#mobile-menu a {
+	color: white;
+}
+#mobile-menu a:hover {
+	color: rgb(175, 171, 171);
+}
+#close-btn {
+	width: 36px;
+	margin-top: 20px;
+}
