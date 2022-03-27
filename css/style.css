@@ -32,6 +32,11 @@ header a:visited {
 .menu-icon {
 	width: 32px;
 }
+/* koristi se za JS kod ZA PRELAZ SA JEDNE SEKCIJE NA DRUGU */
+/* .solid-header {
+	position: fixed;
+	background-color: #c69572;
+} */
 /* ***** HERO SECTIJA ***** */
 #hero-section {
 	background-image: linear-gradient(
