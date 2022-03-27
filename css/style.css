@@ -3,10 +3,12 @@ body {
 }
 /* ***** HEADER ***** */
 header {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 4;
+	background-color: rgba(0, 0, 0, 0.251);
+	backdrop-filter: blur(10px);
 }
 #header-logo {
 	height: 24px;
