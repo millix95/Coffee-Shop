@@ -136,7 +136,8 @@ footer a img {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #312423ed;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
 	display: none;
 }
 #mobile-menu a {
