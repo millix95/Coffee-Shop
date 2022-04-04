@@ -2,18 +2,24 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Coffee Shop Website</title>
 
+	<script src="https://kit.fontawesome.com/f411c85807.js" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=0swald:300,400,500,600,700&display=swap" />
 
 	<link rel="stylesheet" href="./css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/leaflet.css">
+
 </head>
 
 <body>
+
 	<!-- MENU NAVIGACIJA NA MOBILNIM UREDJAJIMA -->
 	<div id="mobile-menu">
 		<div class="contaioner">
@@ -48,7 +54,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-4">
-					<a href="#hero-section"><img id="header-logo" src="./img/header-logo.png"
+					<a href="#hero-section"><img id="header-logo" src="./svg/header-logo.svg"
 							alt="coffee shop header logo" />
 					</a>
 				</div>
@@ -59,7 +65,7 @@
 					<a class="text-decoration-none text-uppercase" href="#map-section">how to find us?</a>
 				</div>
 				<div class="d-md-none col-8 ikonica">
-					<img class="menu-icon" id="menu-btn" src="./img/menu.png" alt="menu" />
+					<i class="fa-solid fa-bars menu-icon" id="menu-btn"></i>
 				</div>
 			</div>
 		</div>
@@ -71,7 +77,7 @@
 		<div class="container-fluid">
 			<div class="row vh-100 align-items-center pb-5">
 				<div class="col-12 text-center sadrzaj">
-					<img id="hero-logo" src="./img/logo.png" alt="coffee shop logo" />
+					<img id="hero-logo" src="./svg/logo.svg" alt="coffee shop logo" />
 					<h1 class="display-2 font-weight-bold">THE HOME OF COFFEE</h1>
 					<p class="lead">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat,
@@ -81,7 +87,12 @@
 				</div>
 			</div>
 		</div>
-		<a id="arrow-down" href="#intro-section"><img src="./img/arrow-down.png" alt="strelica" /></a>
+		<a id="arrow-down" href="#intro-section">
+			<span class="fa-stack fa-2x">
+				<i class="fa-regular fa-circle fa-stack-2x strelica-dole"></i>
+				<i class="fa-solid fa-angle-down fa-stack-1x strelica-dole"></i>
+			</span>
+		</a>
 	</section>
 	<!-- KRAJ HERO SEKCIJA -->
 
@@ -99,15 +110,15 @@
 			</div>
 			<div class="row py-5">
 				<div class="col-sm-4 text-center">
-					<img class="img-fluid py-3" src="./img/icon-1.png" alt="icon 1" />
+					<img class="img-fluid py-3 svg-icon" src="./svg/icon-1.svg" alt="icon 1" />
 					<p class="h4 font-weight-bold">BEST BEANS</p>
 				</div>
 				<div class="col-sm-4 text-center">
-					<img class="img-fluid py-3" src="./img/icon-2.png" alt="icon 2" />
+					<img class="img-fluid py-3 svg-icon" src="./svg/icon-2.svg" alt="icon 2" />
 					<p class="h4 font-weight-bold">QUALITY MILK</p>
 				</div>
 				<div class="col-sm-4 text-center">
-					<img class="img-fluid py-3" src="./img/icon-3.png" alt="icon 3" />
+					<img class="img-fluid py-3 svg-icon" src="./svg/icon-3.svg" alt="icon 3" />
 					<p class="h4 font-weight-bold">PERFECT BLEND</p>
 				</div>
 			</div>
@@ -248,7 +259,11 @@
 	<!-- KRAJ KONTAKT INFO SEKCIJA -->
 
 	<!-- MAPA SEKCIJA -->
-	<section id="map-section"></section>
+	<section id="map-section">
+		<div id="map">
+
+		</div>
+	</section>
 	<!-- KRAJ MAPA SEKCIJA -->
 
 	<!-- FOOTER SEKCIJA -->
@@ -258,11 +273,19 @@
 				<div class="ikonice col-md-5 offset-md-1 align-self-center text-right pt-3">
 					Coffee Shop | &copy; 2020 All rights reserved
 				</div>
-				<div class="col-md-5 align-self-center text-right">
-					<a href="#"><img src="./img/facebook-icon.png" alt="facebook" /></a>
-					<a href="#" class=""><img src="./img/instagram-icon.png" alt="instagram" /></a>
-					<a href="#" class=""><img src="./img/twitter-icon.png" alt="twitter" /></a>
-					<a href="#"><img src="./img/phone-icon.png" alt="phone icon" /></a>
+				<div class="col-md-5 align-items-center text-right">
+					<a href="#">
+						<i class="fa-brands fa-facebook-square footer-ikonica"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-instagram-square footer-ikonica"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-twitter-square footer-ikonica"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-whatsapp-square footer-ikonica"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -272,7 +295,9 @@
 	<!-- JAVASCRIPT -->
 	<script src="./js/jquery-3.4.1.slim.min.js"></script>
 	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/leaflet.js"></script>
 	<script src="./script.js"></script>
+
 </body>
 
 </html>

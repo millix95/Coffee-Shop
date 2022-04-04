@@ -1,6 +1,7 @@
 body {
 	font-family: 'Oswald', sans-serif;
 }
+
 /* ***** HEADER ***** */
 header {
 	position: fixed;
@@ -10,28 +11,36 @@ header {
 	background-color: rgba(0, 0, 0, 0.251);
 	backdrop-filter: blur(10px);
 }
+
 #header-logo {
 	height: 24px;
 }
+
 header a {
 	color: white;
 	margin-left: 24px;
 }
+
 header a:hover {
 	color: white;
 }
+
 header a:visited {
 	color: white;
 }
+
 .text-right {
 	text-align-last: right;
 }
+
 .ikonica {
 	text-align-last: right;
 }
+
 .menu-icon {
-	width: 32px;
+	width: px;
 }
+
 /* koristi se za JS kod ZA PRELAZ SA JEDNE SEKCIJE NA DRUGU */
 /* .solid-header {
 	position: fixed;
@@ -39,24 +48,26 @@ header a:visited {
 } */
 /* ***** HERO SECTIJA ***** */
 #hero-section {
-	background-image: linear-gradient(
-			to bottom right,
+	background-image: linear-gradient(to bottom right,
 			rgba(0, 0, 0, 0.8),
-			rgba(23, 23, 23, 0)
-		),
+			rgba(23, 23, 23, 0)),
 		url(../img/hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .sadrzaj {
 	z-index: 2;
 }
+
 #hero-logo {
 	width: 256px;
 }
+
 .font-weight-bold {
 	font-weight: bold;
 }
+
 #arrow-down {
 	position: absolute;
 	bottom: 64px;
@@ -66,19 +77,31 @@ header a:visited {
 	display: block;
 	width: 64px;
 	z-index: 1;
+	color: white;
 }
+
 #menu-btn {
 	position: fixed;
 	right: 1rem;
 	top: 1rem;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 3px solid rgba(0, 0, 0, 0.5);
-	border-radius: 5px;
+	font-size: 25px;
+	color: white;
 }
+
+
 /* ***** UVODNA SECTIJA ***** */
 #intro-section {
 	background-color: #eae7de;
 }
+
+.svg-icon {
+	width: 96px;
+}
+
+.svg-icon:hover {
+	transform: scale(1.1);
+}
+
 /* ***** O NAMA SECTIJA ***** */
 #abouth-bg-1 {
 	background-image: url(../img/great-place.jpg);
@@ -87,6 +110,7 @@ header a:visited {
 	background-position: right;
 	min-height: 480px;
 }
+
 #abouth-bg-2 {
 	background-image: linear-gradient(to right, #36313782, #36313782),
 		url(../img/fresh-beans.jpg);
@@ -95,14 +119,17 @@ header a:visited {
 	background-position: right;
 	min-height: 640px;
 }
+
 /* ***** MENU SECTIJA ***** */
 #menu-section {
 	background-color: #eae7de;
 }
+
 /* ***** KONTAKT SECTIJA ***** */
 #contact-info-section {
 	width: 100%;
 }
+
 #contact-info-bg-1 {
 	background-image: linear-gradient(to right, #36313782, #36313782),
 		url(../img/contact-img.jpg);
@@ -111,28 +138,56 @@ header a:visited {
 	background-position: left;
 	margin: 0;
 }
+
 #contact-info-bg-2 {
 	background-color: #3d24249a;
 }
+
 /* ***** MAPA SECTIJA ***** */
+#map {
+	height: 480px;
+}
+
+
+
+
 
 /* ***** FOOTER SECTIJA ***** */
 footer {
 	background-color: #312423;
 }
+
 footer a img {
 	width: 32px;
 	margin: 10px;
 }
+
 @media (max-width: 768px) {
 	¤ footer {
 		text-align: center;
 	}
+
 	.text-right {
 		text-align-last: center;
 		margin-bottom: 10px;
 	}
 }
+
+.footer-ikonica {
+	font-size: 36px;
+	margin-right: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+a {
+	color: transparent;
+}
+
+footer div a:hover {
+	color: transparent;
+}
+
 /* ***** MOBILE MENU SECTIJA ***** */
 #mobile-menu {
 	z-index: 3;
@@ -145,12 +200,15 @@ footer a img {
 	backdrop-filter: blur(10px);
 	display: none;
 }
+
 #mobile-menu a {
 	color: white;
 }
+
 #mobile-menu a:hover {
 	color: rgb(175, 171, 171);
 }
+
 #close-btn {
 	width: 36px;
 	margin-top: 20px;
